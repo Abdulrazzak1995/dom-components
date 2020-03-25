@@ -2,6 +2,17 @@ try {
 
   function thumbnail(obj) {
     // write me!
+const divEl = document.createElement('div');
+divEl.className = "thumbmail-container";
+
+const imgEl = document.createElement('IMG');
+imgEl.src = obj.src;
+imgEl.className = "thumbnail-to-the-right";
+
+
+divEl.appendChild(imgEl);
+return divEl;
+
   }
 
 

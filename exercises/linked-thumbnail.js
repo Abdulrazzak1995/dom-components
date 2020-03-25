@@ -2,6 +2,21 @@ try {
 
   function linkedThumbnail(obj) {
 
+const divEl =document.createElement('div');
+divEl.className = "thumbnail-container";
+
+const aEl =document.createElement('a');
+aEl.herf = obj.src;
+aEl.className = "to-the-right";
+divEl.appendChild(aEl);
+
+const imgEl = document.createElement('IMG');
+imgEl.src = obj.src;
+imgEl.className = "thumbnail";
+imgEl.alt="the color" + obj[0];
+aEl.appendChild(imgEl);
+
+return divEl;
   }
 
   testComponent.attributesToTest = [
